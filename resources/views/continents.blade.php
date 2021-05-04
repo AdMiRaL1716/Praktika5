@@ -15,7 +15,7 @@
         @endif
         <div class="row">
             @foreach($continents as $continent)
-                <div class="col-md-4 col-lg-4 col-xl-4 mb-30 continent">
+                <div class="col-md-4 col-lg-4 col-xl-4 mt-3 mb-30 continent">
                     <div class="card h-100 bg-white">
                         <div class="plr-25 ptb-15">
                             <h4 class="mtb-10"><a href="countries/{{$continent->id}}"><b>{{$continent->name}}</b></a></h4>

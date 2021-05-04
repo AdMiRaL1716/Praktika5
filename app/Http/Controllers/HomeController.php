@@ -17,7 +17,7 @@ class HomeController extends Controller
 
     public function countries($id)
     {
-        $countries = Country::query()->where('id_continent', '=', $id)->get();
+        $countries = Country::query()->where('id_continent', '=', $id)->orderBy('name')->get();
         return view('countries', compact('countries'));
     }
 
